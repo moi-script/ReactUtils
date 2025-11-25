@@ -63,7 +63,7 @@ function setDummies(users) {
   localStorage.setItem("users", JSON.stringify(users));
 }
 
-export function getDataLocal(users) {
+ function getDataLocal(users) {
   const userData = JSON.parse(localStorage.getItem("users"));
 
   const getUser = () => {
