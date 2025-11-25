@@ -1,0 +1,98 @@
+
+
+.test-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 5rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 3rem;
+    opacity: 0;
+    transition: all .3s;
+    pointer-events:none ;
+}
+
+.test-modal.open {
+    opacity: 1;
+    background-color:wheat;
+    transform: translate(0px, -80px);
+    pointer-events:auto;
+}
+
+.modal-content {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    transition: all .6s;
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* 
+
+ <label htmlFor="" >Title</label>
+          <input type="text" name="title" placeholder="title"/>
+          <textarea name="description" placeholder="Description"></textarea>
+          <button type="submit">Submit</button> */
+
+
+.formHeader {
+    margin-bottom: 1em;
+    color: rgb(89, 89, 89);
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+.inputForm, .submitTaskBtn {
+    margin: 1em;
+    color: rgb(42, 41, 41);
+    background-color: transparent;
+    padding: .3em;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    height: 35px;
+}
+
+.inputForm::placeholder {
+    color: rgba(255, 255, 255, 0.595);
+}
+
+
+.description {
+    width: 300px;
+    height: 300px;
+    color: black;
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 1.2em;
+    border: none;
+    background-color: white;
+    resize: none;
+}
+
+.description::placeholder {
+    color: black;
+    font-size: 1.3em;
+}
+
+.submitTaskBtn {
+    background-color: brown;
+    color: white;
+}
